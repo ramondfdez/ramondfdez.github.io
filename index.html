@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="es">
 
     <head>
         <meta charset="utf-8">
@@ -17,12 +16,7 @@
     </head>
 
     <body>
-
         <header>
-            <div id="mobile-menu-close">
-                <span>Close</span>
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </div>
             <ul id="menu">
                 <li>
                     <a href="#about">Introducción</a>
@@ -43,7 +37,6 @@
         </header>
         <!-- End header -->
         <div id="lead">
-            <div id="particles-js">
                 <div id="lead-content">
                     <h1>Ramón Díaz Fernández</h1>
                     <h2>Graduado en Ingeniería en Tecnologías de la Telecomunicación</h2>
@@ -61,33 +54,9 @@
                                 <i class="fa fa-github" aria-hidden="true"></i> View Github
                             </a>
                         </h4>
-                    </center>
-                </div>
-            </div>
-
-            <div id="no-particles-js">
-                <div id="no-lead-content">
-                    <h1>Ramón Díaz Fernández</h1>
-                    <h2>Graduado en Ingeniería en Tecnologías de la Telecomunicación</h2>
-                    <center>
-                        <h4>
-                            <a href="" class="btn-rounded-white">
-                                <i class="fa fa-download" aria-hidden="true"></i> Download CV
-                            </a>
-                            &nbsp; &nbsp; &nbsp;
-                            <a href="https://www.linkedin.com/in/ramond-fdez/" class="btn-rounded-white">
-                                <i class="fa fa-linkedin-square" aria-hidden="true"></i> View Linkedin
-                            </a>
-                            &nbsp; &nbsp; &nbsp;
-                            <a href="https://github.com/ramondfdez" class="btn-rounded-white">
-                                <i class="fa fa-github" aria-hidden="true"></i> View Github
-                            </a>
-                        </h4>
-                    </center>
-                </div>
+                    </center>        
             </div>
         </div>
-
         <!-- End #lead-content -->
         <div id="lead-overlay"></div>
 
@@ -106,14 +75,11 @@
         <div id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-3">
-                        <img src="images/profile.png" alt="Ramón Díaz" width="150" />
-                        <br>
-                        <h3 class="heading">HOLA</h3>
+                    <div class="col-md-4">
+                        <!-- <img src="images/profile.png" alt="Ramón Díaz" width="150" /> -->
+                        <h3 class="heading">Sobre Mi</h3>
                     </div>
-                    <div class="col-md-7">
-                        <br>
+                    <div class="col-md-8">
                         <p>
                             Me llamo Ramón, soy un ingeniero de telecomunicaciones graduado en la
                             <a href="https://www.uma.es/">UMA (Universidad de Málaga)</a>. Desde pequeño me ha fascinado todo lo relacionado con  la tecnología, la informática, las comunicaciones móviles,
@@ -126,11 +92,12 @@
         </div>
         <!-- End #about -->
 
-        <div id="companies" class="background-alt">
+        <div id="experience" class="background-alt">
             <h2 class="heading">Experiencia</h2>
-            <div class="education-block">
+
+            <div id="experience-timeline">
                 <h3>Equipo de Mantenimiento, AM Vodafone</h3>
-                <span class="education-date">Sept 2019 - Actualidad</span>
+                <div data-date>Sept 2019 - Actualidad</div>
                 <h4>VIEWNEXT</h4>
                 <h5>Málaga, España</h5>
                 <p>
@@ -142,9 +109,9 @@ del equipo de operaciones de IBM soy el encargado de subir al entorno de producc
 cambios.
                 </p>
             </div>
-            <div class="education-block">
+            <div id="experience-timeline">
                 <h3>Becario</h3>
-                <span class="education-date">Mar 2019 - Sept 2019</span>
+                <div data-date>Mar 2019 - Sept 2019</div>
                 <h4>VIEWNEXT</h4>
                 <h5>Málaga, España</h5>
                 <p>
@@ -152,7 +119,7 @@ cambios.
 PL/SQL y web. Aprendí todo lo que sé sobre herramientas de gestión de Bases de Datos.
                 </p>
             </div>
-            <ul>
+            <!-- <ul>
                 <li>
                     <img src="images/viewnext-logo.png" alt="VIEWNEXT" height="70" />
                     <br>
@@ -168,7 +135,7 @@ PL/SQL y web. Aprendí todo lo que sé sobre herramientas de gestión de Bases d
                     <br>
                 </li>
 
-            </ul>
+            </ul> -->
         </div>
         <!-- End #companies -->
 
@@ -258,15 +225,21 @@ ingeniero de telecomunicaciones del plan antiguo. Con una nota media de 7.
         <!-- End #skills -->
 
 
-        <footer class="background-alt-dark">
+        <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4 copyright">
+                    <div class="col-sm-5 copyright">
                         <p>
                             Made with ❤️ by Ramón Díaz Fernández.
                         </p>
                     </div>
-                    <div class="col-sm-8 social">
+              
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                    <div class="col-sm-5 social">
                         <ul>
                             <li>
                                 <a href="https://github.com/ramondfdez" target="_blank">
@@ -277,6 +250,12 @@ ingeniero de telecomunicaciones del plan antiguo. Con una nota media de 7.
                                 <a href="https://www.linkedin.com/in/ramond-fdez" target="_blank">
                                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                                 </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                             </li>
                             <li>
                                 <a href="mailto:ramond_fdez@outlook.com" target="_blank">
